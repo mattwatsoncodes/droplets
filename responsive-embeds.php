@@ -13,7 +13,7 @@
  * Wrap iFrames and Embeds in a responsive wrapper.
  *
  * To give this any real usage it needs to be used with the CSS found in
- * /droplets/assets/css/_responsive-embeds.scss
+ * /droplets/assets/css/_responsive-embeds.css
  *
  * Be sure to include this in your styles.
  *
