@@ -23,7 +23,11 @@ define( 'MKDO_DROPLETS_TLD', $tld );
 // Include droplets.
 require_once 'droplets/credit.php';
 require_once 'droplets/debug.php';
+require_once 'droplets/emoji.php';
 require_once 'droplets/file-edit.php';
 require_once 'droplets/file-install.php';
 require_once 'droplets/hosting-wp-engine.php';
+require_once 'droplets/iframe.php';
+require_once 'droplets/post-content-clean.php';
 require_once 'droplets/post-formats.php';
+require_once 'droplets/tinymce.php';
