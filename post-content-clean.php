@@ -141,3 +141,31 @@ function mkdo_droplets_sanitize_html( $content ) {
 
 	return $content;
 }
+
+/**
+ * Remove empty <p> tags.
+ *
+ * @see https://gist.github.com/Fantikerz/5557617
+ *
+ * @param  string $content Content to be cleaned.
+ * @return string
+ */
+function mkdo_droplets_remove_empty_p( $content ) {
+	$content = force_balance_tags( $content );
+	$return = preg_replace( '#<p>\s*+(<br\s*/*>)?\s*</p>#i', '', $content );
+	$return = preg_replace( '~\s?<p>(\s|&nbsp;)+</p>\s?~', '', $return );
+
+	return $return;
+}
+add_filter( 'the_content', 'mkdo_droplets_remove_empty_p', 20, 1 );
+
+/**
+ * Remove <p> tags around images.
+ *
+ * @param  string $content Content to be cleaned.
+ * @return string
+ */
+function mkdo_droplets_remove_image_ptags( $content ) {
+	return preg_replace( '/<p>\s*(<a .*>)?\s*(<img .* \/>|<iframe .*>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content );
+}
+add_filter( 'the_content' , 'mkdo_droplets_remove_image_ptags' );

@@ -1,0 +1,33 @@
+/**
+ * Embedded content styles
+ *
+ * EG: for YouTube, Google Maps, Twitter etc.
+ *
+ * Enclose embedded content in a <div> with the `responsive-embed` class to make
+ * it fully responsive.
+ *
+ * Loveingly borrowed from the Kapow Framework by Dave Green (https://github.com/davetgreen)
+ * https://github.com/mkdo/kapow-theme
+ */
+.responsive-embed {
+  height: 0;
+  margin: kp-rem(24px) 0;
+  padding-bottom: 56.25%;
+  position: relative;
+  overflow: hidden;
+}
+.responsive-embed > div,
+.responsive-embed > iframe,
+.responsive-embed > object {
+  bottom: 0;
+  height: 100% !important;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100% !important;
+}
+.responsive-embed > iframe,
+.responsive-embed > object {
+  border: 0;
+}

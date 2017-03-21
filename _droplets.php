@@ -21,6 +21,7 @@ define( 'MKDO_DROPLETS_PERMITTED_USERNAME', 'makedo' );
 define( 'MKDO_DROPLETS_TLD', $tld );
 
 // Include droplets.
+require_once 'droplets/body-classes.php';
 require_once 'droplets/credit.php';
 require_once 'droplets/debug.php';
 require_once 'droplets/emoji.php';
@@ -30,4 +31,5 @@ require_once 'droplets/hosting-wp-engine.php';
 require_once 'droplets/iframe.php';
 require_once 'droplets/post-content-clean.php';
 require_once 'droplets/post-formats.php';
+require_once 'droplets/responsive-embeds.php';
 require_once 'droplets/tinymce.php';

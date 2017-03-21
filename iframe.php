@@ -15,7 +15,7 @@
  * @param  string $content Page/post content.
  * @return string
  */
-function hartley_botanic_iframe_wcag_compliance( $content ) {
+function mkdo_droplets_iframe_wcag_compliance( $content ) {
 
 	// Find all iFrames in the content.
 	$pattern = '~<iframe.*</iframe>~';
@@ -82,4 +82,4 @@ function hartley_botanic_iframe_wcag_compliance( $content ) {
 
 	return $content;
 }
-add_filter( 'the_content', 'hartley_botanic_iframe_wcag_compliance', 20 );
+add_filter( 'the_content', 'mkdo_droplets_iframe_wcag_compliance', 20 );
