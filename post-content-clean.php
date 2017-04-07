@@ -22,6 +22,9 @@ function mkdo_droplets_sanitize_post_content( $data, $postarr ) {
 	// Clean up the post content.
 	$data['post_content'] = mkdo_droplets_sanitize_html( $data['post_content'] );
 
+	// Clean up the post excerpt.
+	$data['post_excerpt'] = mkdo_droplets_sanitize_html( $data['post_excerpt'] );
+
 	return $data;
 }
 add_filter( 'wp_insert_post_data' , 'mkdo_droplets_sanitize_post_content', 99, 2 );
