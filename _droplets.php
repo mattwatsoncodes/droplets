@@ -38,6 +38,7 @@ require_once 'droplets/limit-login-attempts.php';
 require_once 'droplets/post-content-clean.php';
 require_once 'droplets/post-formats.php';
 require_once 'droplets/responsive-embeds.php';
+require_once 'droplets/show-editor-on-posts-page.php';
 require_once 'droplets/tinymce.php';
 require_once 'droplets/wpml-bing-compatible-header.php';
 require_once 'droplets/wpml-set-content-language.php';
