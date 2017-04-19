@@ -21,6 +21,9 @@ $tld = end( $tld );
 define( 'MKDO_DROPLETS_PERMITTED_USERNAME', 'makedo' );
 define( 'MKDO_DROPLETS_TLD', $tld );
 
+// Should the login lockout droplet lock by username, or globally?
+define( 'MKDO_DROPLETS_IS_LOCKOUT_GLOBAL', false );
+
 // Include droplets.
 require_once 'droplets/body-classes.php';
 require_once 'droplets/credit.php';
@@ -30,7 +33,13 @@ require_once 'droplets/file-edit.php';
 require_once 'droplets/file-install.php';
 require_once 'droplets/hosting-wp-engine.php';
 require_once 'droplets/iframe.php';
+require_once 'droplets/login-one-user-instance.php';
+require_once 'droplets/limit-login-attempts.php';
 require_once 'droplets/post-content-clean.php';
 require_once 'droplets/post-formats.php';
 require_once 'droplets/responsive-embeds.php';
 require_once 'droplets/tinymce.php';
+require_once 'droplets/wpml-bing-compatible-header.php';
+require_once 'droplets/wpml-set-content-language.php';
+require_once 'droplets/yoast-wpml-alternate-links-to-site-map.php';
+require_once 'droplets/yoast-wpml-sitemap-per-translation.php';
