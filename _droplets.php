@@ -25,6 +25,7 @@ define( 'MKDO_DROPLETS_TLD', $tld );
 define( 'MKDO_DROPLETS_IS_LOCKOUT_GLOBAL', false );
 
 // Include droplets.
+require_once 'droplets/add-blog-post-to-slug.php';
 require_once 'droplets/body-classes.php';
 require_once 'droplets/credit.php';
 require_once 'droplets/debug.php';
