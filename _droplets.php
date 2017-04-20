@@ -29,6 +29,7 @@ require_once 'droplets/add-blog-to-post-slug.php';
 require_once 'droplets/body-classes.php';
 require_once 'droplets/credit.php';
 require_once 'droplets/debug.php';
+require_once 'droplets/disable-admin-bar.php';
 require_once 'droplets/emoji.php';
 require_once 'droplets/file-edit.php';
 require_once 'droplets/file-install.php';
